@@ -1,0 +1,101 @@
+<!-- use this as a search bar in nav bar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+    margin: 0;
+    height: 100vh; 
+    background-image: url('https://i.pinimg.com/originals/40/eb/6c/40eb6cb5f9e91a3766b9a3134203aa56.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+}
+        li ,a , button{
+            font-family: "montserrat",sans-serif;
+            font-weight:500;
+            font-size:16px;
+            color:#edf0f1;
+            text-decoration: none;
+
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px 10px;
+            margin:0px ;
+            height:200px;
+
+        }
+        .logo{
+            cursor: pointer;
+            margin-right: auto;
+        }
+        .nav_links{
+            list-style: none;
+        }
+        .nav_links li{
+            display:inline-block;
+            padding: 0px 20px;
+        }
+        .nav_links li  a{
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li  a:hover{
+            color:#0088a9;
+        }
+        button{
+            margin-left: 10px;
+            padding: 9px 25px;
+            background-color: rgba(0,136,169,1);
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(0,136,169,0.8);
+        }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.png">
+    <nav>
+        <ul class="nav_links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="menuCard.htmlS">MENU</a></li>
+            <li><a href="part1.html">REVIEW</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="#"><button>Contact</button></a> 
+</header>
+
+<div class="container">
+  <h2 style="color: aliceblue;">SYSTUMM REVIEW BUTTON</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Write a review here...</label>
+      <input type="text" class="form-control" id="pwd" placeholder="write text here.." name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default" style="justify-content: center;">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

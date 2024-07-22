@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTUMM MENU</title>
+    <style>
+        *{
+            padding: 0cap;
+            margin:0%;
+            box-sizing: border-box;
+            
+        }
+        body {
+    margin: 0;
+    height: 100vh; 
+    background-image: url('https://i.pinimg.com/originals/40/eb/6c/40eb6cb5f9e91a3766b9a3134203aa56.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+        li ,a , button{
+            font-family: "montserrat",sans-serif;
+            font-weight:500;
+            font-size:16px;
+            color:#edf0f1;
+            text-decoration: none;
+
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 10px 10px;
+            margin:0px ;
+            height:200px;
+
+        }
+        .logo{
+            cursor: pointer;
+            margin-right: auto;
+        }
+        .nav_links{
+            list-style: none;
+        }
+        .nav_links li{
+            display:inline-block;
+            padding: 0px 20px;
+        }
+        .nav_links li  a{
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li  a:hover{
+            color:#0088a9;
+        }
+        button{
+            margin-left: 10px;
+            padding: 9px 25px;
+            background-color: rgba(0,136,169,1);
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(0,136,169,0.8);
+        }
+        /* scroll container */
+        .active {
+        background-color: #04AA6D;
+        /* transition WINDOW GALLERY */
+        .container{
+            width:90%;
+            padding: 0px;
+            margin:100px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .box{
+            width:150px;
+            margin:0 0px;
+            box-shadow: 0 0 20px 2px rgba(0 , 0, 0,.1);
+        }
+        .box img{
+            display: block;
+            width: 100%;
+            height:200px;
+            border-radius: 5px;
+        }
+      }
+      div.scroll-container {
+  background-image: url('1.png');
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+div.scroll-container img {
+  padding: 5px;
+  margin:5px;
+}
+        .menu{
+            padding: 0px 10px 30px 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+            grid-gap: 20px 40px;
+           
+        }
+        .heading{
+            background-color: rgb(204, 90, 90);
+            grid-column:1/-1 ;
+            text-align: center;
+            margin-bottom: 30px;
+            color:azure;
+            padding:30px 0%;
+            margin: 0%;
+        }
+        .heading>h1{
+            font-weight: 400;
+            font-size: 32px;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .heading>h3{
+            font-weight: 600;
+            font-size:22px;
+            letter-spacing: 5px;
+            text-transform:uppercase;
+        }
+        .food-items{
+            width:300px;
+            height:500px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            grid-template-columns: auto 1fr;
+            border-radius: 15px;
+            box-shadow: 0 0 15 px black;
+            transition:.2s ease-in-out ;
+            background-color: rgb(178, 176, 176);
+        }
+        .food-items img{
+            position: relative;
+            width: 100%;
+            height: 280px;
+            border-radius: 15px 12px 0 0;
+            cursor: pointer;
+            object-fit: cover;
+
+        }
+        .details{
+            padding: 10px 10px;
+            display:grid;
+            grid-template-rows: auto 1fr 50px;
+            grid-row-gap: 15px;
+        }
+        .details-sub{
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+        .details-sub>h5{
+            font-weight: 800;
+            font-size: 22px;
+            color:rgb(19, 38, 38)
+        }
+        .price{
+            text-align: right;
+        }
+        .details>p{
+            color:#6f6f6f;
+            font-size: 15px;
+            line-height: 40px;
+            font-weight: 600;
+            align-items: stretch;
+
+            
+        }
+        .details>button{
+            background:rgb(122, 11, 11);
+            border: none;
+            color:#fff;
+            font-size: 20px;
+            border-radius: 5px;
+            font-weight:bolder;
+            width: 200px;
+            /* cursor: pointer; */
+
+        }
+        .btn{
+            color:#fff;
+            padding: 15px 26px;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: #f93f35c0;
+            border-radius: 8px;
+            font-size: 25px;
+            position: absolute;
+            bottom: 90px;
+            margin-left:720px;
+
+            
+            
+            
+            
+            
+            
+
+        }
+        .btn:hover{
+            background-color: #054b9c;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+        }
+
+        .about h1 {
+            color: #0742a1;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .about h3 {
+            color: #317ffb;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        
+        section .about {
+            line-height: 1.6;
+        }
+
+        .about {
+            background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3RwMjU2LWJhY2tncm91bmQtMDgteC5qcGc.jpg");
+            border-radius: 30px;
+            box-shadow:0 0 18px #3f3f3f;
+        
+        background:linear-gradient(rgb(245, 212, 217),rgb(151, 209, 245))}
+
+        .contact {
+            background-color: #f7f7f7;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .information p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-details {
+            text-align: left;
+        }
+
+        .form input,
+        .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            background-color: #2980b9;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+       
+        footer div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .link a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+
+        .back {
+    margin-left: 680px;
+    font-size: 20px;
+    width: 100px;
+    bottom: 0;
+    background-color: rgb(139, 152, 176);
+    font-weight: 600;
+    border-radius: 40px;
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    text-decoration: none;
+}
+
+.back:hover {
+    background-color: #98c5e1; 
+}
+
+button a {
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="page1_CAFE.html">HOME</a></li>
+                <li><a href="menuCard.html">MENU</a></li>
+                <li><a href="part1.html">REVIEW</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#section-id"><button>Contact</button></a> 
+    </header>
+<br>
+    <!-- scroll box -->
+    <div class="scroll-container">
+        <img src="https://muffingroup.com/blog/wp-content/uploads/2021/07/Rise-and-Grind.jpg" alt="Cinque Terre" width="600" height="400">
+        <img src="https://www.sliderrevolution.com/wp-content/uploads/2021/10/Cafenod.jpg" alt="Forest" width="600" height="400">
+        <img src="https://cdn.dribbble.com/userupload/11794420/file/original-000a3b17054ea756b302b4e638b36c69.png?resize=400x0" alt="Northern Lights" width="600" height="400">
+        <img src="https://cdn.flames.design/project-media/72278b1a-cbb0-4d6a-a180-4a5b1f293cc2/original-61ad2fc8-8d6b-428f-ac9e-9381265dcf2c.png?aspect_ratio=4:3&width=900&height=600&quality=60" alt="Mountains" width="600" height="400">
+        <img src="https://cdn.flames.design/project-media/72278b1a-cbb0-4d6a-a180-4a5b1f293cc2/original-61ad2fc8-8d6b-428f-ac9e-9381265dcf2c.png?aspect_ratio=4:3&width=900&height=600&quality=60" alt="Mountains" width="600" height="400">
+        <img src="https://cdn.flames.design/project-media/72278b1a-cbb0-4d6a-a180-4a5b1f293cc2/original-61ad2fc8-8d6b-428f-ac9e-9381265dcf2c.png?aspect_ratio=4:3&width=900&height=600&quality=60" alt="Mountains" width="600" height="400">
+        <img src="https://cdn.flames.design/project-media/72278b1a-cbb0-4d6a-a180-4a5b1f293cc2/original-61ad2fc8-8d6b-428f-ac9e-9381265dcf2c.png?aspect_ratio=4:3&width=900&height=600&quality=60" alt="Mountains" width="600" height="400">
+        <img src="https://cdn.flames.design/project-media/72278b1a-cbb0-4d6a-a180-4a5b1f293cc2/original-61ad2fc8-8d6b-428f-ac9e-9381265dcf2c.png?aspect_ratio=4:3&width=900&height=600&quality=60" alt="Mountains" width="600" height="400">
+        <img src="https://cdn.flames.design/project-media/72278b1a-cbb0-4d6a-a180-4a5b1f293cc2/original-61ad2fc8-8d6b-428f-ac9e-9381265dcf2c.png?aspect_ratio=4:3&width=900&height=600&quality=60" alt="Mountains" width="600" height="400">
+
+      </div>
+    
+    <div class="menu">
+        <div class="heading">
+            <h1>RESTAURANT FOOD</h1>
+            <h3>&mdash;MENU&mdash;</h3>
+        </div>
+        <div class="food-items">
+            <img src="https://img.freepik.com/free-photo/delicious-burger-with-many-ingredients-isolated-white-background-tasty-cheeseburger-splash-sauce_90220-1266.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1721520000&semt=sph">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>BURGERS</h5>
+                    <h5 class="price">$9</h5>
+                </div>
+                <p>veggies cheesy tikki(INDIAN)</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://img.freepik.com/premium-photo/wood-fired-pizza-with-4-types-cheese-white-sauce-wooden-background-pizzette-kind-italian-pizza_207126-5327.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>PIZZA-W</h5>
+                    <h5 class="price">$20</h5>
+                </div>
+                <p>ricotta mozzarella served in olive oil </p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://us.123rf.com/450wm/radarreklama/radarreklama0910/radarreklama091000031/5692461-full-pizza-on-white-ground.jpg?ver=6">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>PIZZA-T</h5>
+                    <h5 class="price">$18</h5>
+                </div>
+                <p>pomodora garlic chill</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/5ffdd471625a2b70fa550852-7e742e61.jpeg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>BREAD(PLAIN)</h5>
+                    <h5 class="price">$9</h5>
+                </div>
+                <p>tosted bread in olive oil </p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://thumbs.dreamstime.com/z/stuffed-garlic-bread-slices-american-italian-cuisine-stuffed-garlic-bread-slices-cheese-herbs-white-142430066.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>BREAD(STUFFED)</h5>
+                    <h5 class="price">$12</h5>
+                </div>
+                <p>INDIAN AACHARI FLAVOURED VEG </p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://t4.ftcdn.net/jpg/05/76/37/13/360_F_576371338_FhHg1OgkSLrN4jLZci3fDB7gzFYydUtc.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>TACO MAX</h5>
+                    <h5 class="price">$11</h5>
+                </div>
+                <p>OVERLOAD CRUNCHY PATTY</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://thumbs.dreamstime.com/b/taco-salad-meal-food-diet-generate-ai-317504115.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>BEAN RUSH</h5>
+                    <h5 class="price">$5</h5>
+                </div>
+                <p>high protein bean salad farm fresh</p>
+                <button>Add To Cart</button>
+            </div>
+        </div><div class="food-items">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/99/69/21/1000_F_399692129_7fvjC5guaumpbgcxpGQDk9u3KQSTAgk7.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>PAKODA</h5>
+                    <h5 class="price">$4</h5>
+                </div>
+                <p>DEEP FRIED GRAIN FLOUR VEGGIES</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://assets.bonappetit.com/photos/5c2f8fe26558e92c8a622671/1:1/w_2560%2Cc_limit/bolognese-1.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>BOLOGNESE</h5>
+                    <h5 class="price">$15</h5>
+                </div>
+                <p>Italian spicies chilly</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpOLXLsH-PwTAWUTAH1PmY5-0o90xCTH51xeUCAV9o3p5KMGgIeTJ6oNoHwMfknLqJ8A&usqp=CAU">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>HAKKA NODDLES</h5>
+                    <h5 class="price">$9</h5>
+                </div>
+                <p>freah veggies less spicies</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://media.istockphoto.com/id/1399315827/photo/chow-mein-noodles-with-chicken-and-veggies-served-with-soy-sauce-and-scallion-top-down-photo.jpg?s=612x612&w=0&k=20&c=mDfmcJ_INiUZf4o5JX1cvYxUgpkOpAQBcJb0pxjm5jI=">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>CHOW-NOODLES</h5>
+                    <h5 class="price">$7</h5>
+                </div>
+                <p>INDIAN STYLED NOODLES</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://www.shutterstock.com/image-photo/fried-chinese-traditional-spring-rolls-600nw-1993849457.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>SPANISH ROLLS </h5>
+                    <h5 class="price">$10</h5>
+                </div>
+                <p>spnish and cheese stuffed</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://img.freepik.com/premium-photo/eating-sushi-with-chopsticks-sushi-roll-japanese-food-restaurant-isolated-white-background_128650-817.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>SUSHI</h5>
+                    <h5 class="price">$22</h5>
+                </div>
+                <p>rice with sea food</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://c8.alamy.com/comp/2CC004X/japanese-food-japanese-soft-cold-tofu-in-a-bowl-on-white-background-2CC004X.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>TOFU JAP*</h5>
+                    <h5 class="price">$3</h5>
+                </div>
+                <p>JAPANESE STYLED TOFU</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://png.pngtree.com/thumb_back/fh260/background/20220508/pngtree-dessert-menu-candy-pastry-photo-image_17785352.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>MANGO JELLY</h5>
+                    <h5 class="price">$16</h5>
+                </div>
+                <p>CRUNCH AND JELLY SMUSH</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://handletheheat.com/wp-content/uploads/2021/06/homemade-vanilla-ice-cream.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>ice cream</h5>
+                    <h5 class="price">$4</h5>
+                </div>
+                <p>vanilla sugar rush </p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>CAKE</h5>
+                    <h5 class="price">$26</h5>
+                </div>
+                <p>BIRTHDAYYY SPECIAL SWEET BREAD</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>SLICED CAKE</h5>
+                    <h5 class="price">$9</h5>
+                </div>
+                <p>A TASTE OF BITS WITH JOY</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+        <br>
+        <p>Reach out to us for any inquiries or feedback.</p>
+        <div class="row">
+          <div class="col information">
+            <div class="contact-details">
+              <p><i class="fas fa-map-marker-alt"></i> 123 Campsite Avenue, Wilderness, CA 98765</p>
+              <p><i class="fas fa-envelope"></i> deepshikha1234@gmail.com</p>
+              <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+              <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+              <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
+              <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+              <p><i class="fas fa-globe"></i> www.drawingweb.com</p>
+            </div>          
+          </div>
+          <div class="col form">
+            <form>
+              <input type="text" placeholder="Name*" required>
+              <input type="email" placeholder="Email*" required>
+              <textarea placeholder="Feedback" required ></textarea>
+              <button id="submit" type="submit">Send Feedback</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        
+        <div>
+          <span>Copyright © 2023 All Rights Reserved</span>
+          <span class="link">
+              <a href="#home"><b><h3>Home</h3></b></a>
+          </span>
+        </div>
+      </footer>
+</body>
+</html>
